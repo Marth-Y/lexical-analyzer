@@ -562,12 +562,14 @@ void LexiscalAnalyzer()
 		else if (ch == '*')//跳过注释
 		{
 			getNextChar(fp);
-			while (ch != '*')
+			char temp = ch;
+			while (temp != '*'||ch!='/')
 			{
+				temp = ch;
 				getNextChar(fp);
 			}
-			getNextChar(fp);
-			if (ch == '/');
+			//getNextChar(fp);
+			//if (ch == '/')
 			break;
 		}
 		else
