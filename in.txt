@@ -1,3 +1,4 @@
+//这是测试词法分析txt文件，使用时需要自己指定文件地址
 #include<iostream>
 using namespace std;
 int main()
